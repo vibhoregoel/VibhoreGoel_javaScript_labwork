@@ -65,10 +65,7 @@ function showProgress() {
 function showScore(){
     let x = "<h1>Result is : </h1>";
     x += "<h2>Your score is : "+quiz.score+"</h2>";
-    let percentage = (quiz.score/quiz.questions.length)*100;
-    x = x + "<h2> Your percentage is : "+percentage+"%"+"</h2>"
-    document.getElementById("quiz").innerHTML = x;
-    
+    document.getElementById("quiz").innerHTML = x;   
 }
 
 function handleOptionButton(choice, id){
